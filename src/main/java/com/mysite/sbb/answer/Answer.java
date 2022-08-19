@@ -1,5 +1,6 @@
-package com.mysite.sbb.mysite;
+package com.mysite.sbb.answer;
 
+import com.mysite.sbb.question.Question;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
