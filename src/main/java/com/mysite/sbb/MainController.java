@@ -11,4 +11,9 @@ public class MainController {
     public String index(){
         return("웹 페이지 만들기의 시작입니다.");
     }
+
+    @RequestMapping("/")
+    public String root(){
+        return "redirect:/question/list";
+    }
 }
