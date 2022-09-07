@@ -12,12 +12,13 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import com.mysite.sbb.user.UserSecurityService;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Configuration
 @EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
 
     private final UserSecurityService userSecurityService;
